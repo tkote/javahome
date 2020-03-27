@@ -18,14 +18,14 @@ public class App
 {
     public static void main( String[] args )
     {
-        Options options = new Options();
-        Option vOpt = Option.builder("v")
+        final Options options = new Options();
+        final Option vOpt = Option.builder("v")
             .longOpt("verbose")
             .hasArg(false)
             .desc("verbose mode")
             .build();
         options.addOption(vOpt);
-        CommandLineParser parser = new DefaultParser();
+        final CommandLineParser parser = new DefaultParser();
         CommandLine cmd = null;
         try {
             cmd = parser.parse(options, args);
@@ -39,8 +39,7 @@ public class App
         final boolean verbose = cmd.hasOption("v");
 
         final String javaHome = System.getProperty("java.home").replaceAll(File.separator + "jre$", "");
-        if(verbose) System.err.println(String.format("java.home=%s", javaHome));
         System.out.print(javaHome);
-        if(verbose) System.err.println();
+        if(verbose) System.err.println(String.format("\njava.home=%s", javaHome));
     }
 }
