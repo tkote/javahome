@@ -1,4 +1,4 @@
-package cf.ocha;
+package cf.ocha.javahome;
 
 import java.io.File;
 
