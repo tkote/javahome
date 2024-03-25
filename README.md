@@ -1,5 +1,5 @@
 
-# javahome
+# printjavahome
 
 ## Prerequisites
 
