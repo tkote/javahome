@@ -21,7 +21,7 @@ echo ""
 or set an alias in .bashrc
 
 ```
-alias setjavahome="JAVA_HOME=$(java -jar printjavahome.jar);export JAVA_HOME"
+alias setjavahome='JAVA_HOME=$(java -jar printjavahome.jar);export JAVA_HOME'
 ```
 
 You can run PrintJavaHome.java without compilation with JDK 11+
